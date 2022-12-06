@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+  background-color: rgb(1, 1, 14);
+  min-height: 100vh;
+  color: goldenrod;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+
+}
+.Ar{
+  text-align: center;
+  background-color: rgb(35, 4, 35);
+  color: white;
+}
+.btns{
+  padding-top: 20px;
+}
+.btn{
+  background-color: grey;
+  width: 20%;
+  height: 50px;
+  box-shadow:  2px 3px 10px rgb(13, 0, 0);
+}
+.btn:hover{
+  box-shadow: inset 2px 3px 10px rgb(13, 0, 0);
+}
+.App-header {
+  /* background-color: #282c34; */
+  background-image: url("https://guardian.ng/wp-content/uploads/2022/07/World-population.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px  goldenrod;
+  min-height: 50vh;
+  opacity: 0.4;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-header:hover {
+  opacity: 1.0;
+  color:goldenrod;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
