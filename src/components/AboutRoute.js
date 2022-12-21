@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 class aboutRouter extends React.Component{
     render(){
         return(
-            <div className="Ar">
-                <div> <Link to="/">{`<--`}</Link>
+            <div >
+                <div>
                     <h1>Om hvordan  ta ibruk router i en react applikasjon. </h1>
                 P.s dette er min erfaring og hvordan jeg selv har kommet over det. <br></br>Nedest legger jeg ved linker til sider jeg har brukt for å lære meg dette.
                  (mulig noe er feil også, eller blir gjort på en bedre måte)
@@ -50,6 +50,7 @@ class aboutRouter extends React.Component{
                  <a href="https://www.tutorialspoint.com/reactjs/reactjs_router.htm">En side jeg kom over ang rounting og componenter, enkel torturial</a> <br></br>
                  <a href="https://refine.dev/blog/usenavigate-react-router-redirect/"> En side jeg kom over som bruker useNavigate</a><br></br>
                  <a href="https://www.w3schools.com/react/react_components.asp"> w3schools forklaring om componenter</a>
+                 <a href="https://www.youtube.com/watch?v=SLfhMt5OUPI">link til youtube video om navigasjonsbar</a>
                  </div>
                 
 
