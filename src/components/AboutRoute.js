@@ -15,7 +15,7 @@ class aboutRouter extends React.Component{
                     Det jeg fort fant ut etterpå var at det er viktig å importere i index.js. Det jeg måtte importere var:  
                     <h3>
                     <ul><code>import &#123; BrowserRouter, Routes, Route &#125; from "react-router-dom"</code></ul> 
-                    <ul><code>import &#123; aboutRouter  &#125; from "from ./components/AboutRoute.js"</code><tt>(komponenten jeg hadde laget)</tt></ul>
+                    <ul><code>import &#123; aboutRouter  &#125; from " ./components/AboutRoute.js"</code><tt>(komponenten jeg hadde laget)</tt></ul>
                     </h3>
                  </p>
 
