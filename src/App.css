@@ -3,11 +3,26 @@
   background-color: rgb(1, 1, 14);
   min-height: 100vh;
   color: goldenrod;
+  display: grid;
+  grid-template-areas: 'sidebar header '
+                      'sidebar content' 
+                      'sidebar content';
+                      grid-template-columns: 10vw 80vw ;
+                      grid-template-columns: 10vw 80vw ;
+                      grid-template-columns: 10vw 80vw ;
+                      grid-template-rows: 30vh auto ;
+  gap: 10px;
+  padding: 10px;
+                     
 }
 
 
 @media (prefers-reduced-motion: no-preference) {
 
+}
+.active{
+  color: white;
+ text-decoration: underline;
 }
 .Ar{
   text-align: center;
@@ -18,13 +33,21 @@
   padding-top: 20px;
 }
 .btn{
-  background-color: grey;
-  width: 20%;
+  background-color: goldenrod;
+  width: 80%;
   height: 50px;
   box-shadow:  2px 3px 10px rgb(13, 0, 0);
 }
 .btn:hover{
   box-shadow: inset 2px 3px 10px rgb(13, 0, 0);
+}
+.App-sidebar{
+  grid-area: sidebar;
+  /* background-color: blueviolet; */
+}
+.App-content{
+  grid-area: content;
+  /* background-color: green; */
 }
 .App-header {
   /* background-color: #282c34; */
@@ -34,7 +57,7 @@
   background-size: cover;
   border-radius: 50%;
   box-shadow: 1px 1px 10px  goldenrod;
-  min-height: 50vh;
+  min-height: 30vh;
   opacity: 0.4;
 
   display: flex;
@@ -43,6 +66,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  grid-area: header;
 }
 .App-header:hover {
   opacity: 1.0;

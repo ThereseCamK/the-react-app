@@ -1,10 +1,18 @@
 
-import { useNavigate } from 'react-router';
 import './App.css';
+import MainPage from './components/MainPage';
+import './App.css';
+import Navbar from './components/NavBar';
+import AboutRouter from './components/AboutRoute';
+import {
+  
+  Routes,
+  Route,
+} from "react-router-dom";
 
 
 function App() {
-  const navigate = useNavigate();
+ 
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +25,20 @@ function App() {
 
  
       </header>
-      <div className="btns">   
-        <button className="btn" onClick={()=> navigate('/ar')}>Bruke router og navigate </button>
+      <div className='App-sidebar'>
+        <Navbar>
+
+        </Navbar>
+      
       </div>
+      <div className='App-content'> 
+     
+      <Routes>
+        <Route path="/" element={<MainPage/> } />
+        <Route path="/ar" element={<AboutRouter />} />
+      </Routes>
+
+     </div>
    
     
     </div>
