@@ -29,6 +29,7 @@
   background-color: rgb(35, 4, 35);
   color: white;
 }
+
 .btns{
   padding-top: 20px;
 }
@@ -48,6 +49,36 @@
 .App-content{
   grid-area: content;
   /* background-color: green; */
+}
+@media only screen and (max-width: 400px){
+  .App {
+    text-align: center;
+    background-color: rgb(1, 1, 14);
+    min-height: 100vh;
+    color: goldenrod;
+    display: grid;
+    grid-template-areas: 'header header '
+                        'sidebar sidebar' 
+                        'content content';
+                        grid-template-columns: auto auto ;
+                        grid-template-columns: auto auto ;
+                 
+                        grid-template-rows: 30vh auto ;
+  
+    
+                       
+  }
+  .btn{
+    width: 100px;
+    font-size: xx-small;
+    height: 30px;
+    float: left;
+    margin: 2px;
+    align-items: center;
+  }
+  .btns{
+    padding-top: 5px;
+  }
 }
 .App-header {
   /* background-color: #282c34; */
