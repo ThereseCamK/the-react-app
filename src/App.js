@@ -4,6 +4,7 @@ import MainPage from './components/MainPage';
 import './App.css';
 import Navbar from './components/NavBar';
 import AboutRouter from './components/AboutRoute';
+import AboutUseNavigate from './components/AboutNavigate';
 import {
   
   Routes,
@@ -36,6 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage/> } />
         <Route path="/ar" element={<AboutRouter />} />
+        <Route path="/aun" element={<AboutUseNavigate />} />
       </Routes>
 
      </div>

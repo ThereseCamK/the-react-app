@@ -8,6 +8,8 @@
      
         <button onClick={()=> navigate('/')} className="btn"><CustomLink to="/">Hjem</CustomLink></button>
         <button  onClick={()=> navigate('/ar')} className="btn"><CustomLink to="/ar">Om Routing</CustomLink></button>
+        <button  onClick={()=> navigate('/aun')} className="btn"><CustomLink to="/ar">Om useNavigate</CustomLink></button>
+        
         
       
       </nav>
