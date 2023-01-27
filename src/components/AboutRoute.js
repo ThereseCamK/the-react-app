@@ -43,7 +43,7 @@ class aboutRouter extends React.Component{
                             Inne i div så har jeg en div som er header, en div for navigasjonsbaren og en for der teksen endrer seg altså "hovedboksen". 
                             <br></br>
                             Slik satt jeg det opp: <br></br>
-
+                            </p>
                             <ul> {`
                             
                             <div className="App">
@@ -71,9 +71,9 @@ class aboutRouter extends React.Component{
                             </ul>
                             <br></br>
                             <p>Da bytter App-content innhold i henhold til den knappen jeg har trykket på i navbar. </p>
-                            <tt>Hvordan knappene fungerer med useNavigate() kan du finne under Om useNavigate. :) </tt>
+                            <tt>Hvordan knappene fungerer med useNavigate() (også innenfor router)  kan du finne under Om useNavigate. :) </tt>
                             
-                        </p>
+           
                         {/* <ul>Og denne har jeg brukt på en knapp slik : {`onClick={()=>navigate(/'ar')}`} <tt>('/ar' er path til AboutRouter.js)</tt></ul> */}
                     </h3>
                  </div>

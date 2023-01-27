@@ -8,7 +8,7 @@
      
         <button onClick={()=> navigate('/')} className="btn"><CustomLink to="/">Hjem</CustomLink></button>
         <button  onClick={()=> navigate('/ar')} className="btn"><CustomLink to="/ar">Om Routing</CustomLink></button>
-        <button  onClick={()=> navigate('/aun')} className="btn"><CustomLink to="/ar">Om useNavigate</CustomLink></button>
+        <button  onClick={()=> navigate('/aun')} className="btn"><CustomLink to="/aun">Om useNavigate</CustomLink></button>
         
         
       
@@ -16,14 +16,15 @@
     )
   }
   
-  function CustomLink({ to, children, ...props }) {
+  function CustomLink({ to, children}) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({ path: resolvedPath.pathname, end: true })
   //children er teksten på knappen (hjem, Om Routing)
   //to er pathName (/, /ar)
+
     return (
 
-    <div className={isActive ? "active" : ""} to={to} {...props}>
+    <div className={isActive ? "active" : ""} to={to} >
         {children}
     </div>
     )
